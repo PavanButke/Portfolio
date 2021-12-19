@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { Redirect, useHistory } from "react-router-dom";
 import { auth } from "../firebase";
 
-let Signup = () => {
+let SignUp = () => {
   let history = useHistory();
   let [password, setPassword] = useState("");
   let [confirmPassword, setConfirmPassword] = useState("");
@@ -88,4 +88,4 @@ let Signup = () => {
     </>
   );
 };
-export default Signup;
+export default SignUp;

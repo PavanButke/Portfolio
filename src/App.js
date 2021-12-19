@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./Components/home"
+import Home from "./components/home";
 
-import Login from "./Components/login";
-import Navbar from "./Components/navbar";
-import SignUp from "./Components/signup1";
+import Login from "./components/login";
+import Navbar from "./components/navbar";
+import SignUp from "./components/signup";
 import { auth, firestore } from "./firebase";
 import { userCreator } from "./redux/actions/userActions";
 
@@ -42,7 +42,7 @@ let App = () => {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/signup">
+          <Route path="/signup"> 
             <SignUp />
           </Route>
           <Route path="/">
