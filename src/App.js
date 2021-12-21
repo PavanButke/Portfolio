@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/home";
-
+import PersonalData from "./components/personalData";
 import Login from "./components/login";
 import Navbar from "./components/navbar";
 import SignUp from "./components/signup";
@@ -39,6 +39,9 @@ let App = () => {
       <Router>
         <Navbar />
         <Switch>
+          <Route path="/personal">
+              <PersonalData />
+          </Route>
           <Route path="/login">
             <Login />
           </Route>
