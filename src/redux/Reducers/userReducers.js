@@ -1,4 +1,4 @@
-let userReducer = (state= null , action)=>{
+let userReducers = (state= null , action)=>{
             switch(action.type){
                 case "SET_USER":
                     return action.payload;
@@ -8,4 +8,4 @@ let userReducer = (state= null , action)=>{
 
 };
 
-export default userReducer;
+export default userReducers;

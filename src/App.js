@@ -39,6 +39,7 @@ let App = () => {
       <Router>
         <Navbar />
         <Switch>
+            <Home />
           <Route path="/personal">
               <PersonalData />
           </Route>
@@ -48,8 +49,7 @@ let App = () => {
           <Route path="/signup"> 
             <SignUp />
           </Route>
-          <Route path="/">
-            <Home />
+          <Route exact path="/">
           </Route>
         </Switch>
       </Router>
